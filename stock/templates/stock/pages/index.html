@@ -1,0 +1,10 @@
+{% extends 'stock/base.html' %}
+
+{% block header %}
+    {% include 'stock/shared/__navbar.html' %}
+{% endblock %}
+
+{% block main %}
+    <p> Hello World</p><a href="{% url 'stock:logout' %}" type="button" class="btn btn-primary">deconnexion</a>
+
+{% endblock %}

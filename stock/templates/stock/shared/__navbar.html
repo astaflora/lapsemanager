@@ -1,0 +1,20 @@
+<nav>
+    <div>
+        <div>
+            <a href=""></a>
+            <span>logo</span>
+        </div>
+        <ul>
+            <li><a href="" class="{% if selection|default:'home' == 'home' %}{% endif %}">Accueil</a></li>
+            <li><a href="" class="{% if selection == 'product' %}{% endif %}">Produits</a></li>
+            <li><a href="" class="{% if selection == 'notification' %}{% endif %}">Notifications</a></li>
+            <li><a href="" class="{% if selection == 'user' %}{% endif %}">Utilisateurs</a></li>
+        </ul>
+    </div>
+    <ul>
+        <li><span>SuperAdmin</span></li>
+        <li><i>notif</i></li>
+        <li><i>person</i></li>
+    </ul>
+
+</nav>

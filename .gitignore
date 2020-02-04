@@ -1,0 +1,14 @@
+.idea/
+__pycache__/
+db.sqlite3
+staticfiles/
+settings.py
+migrations/
+wsgi.py
+settings.py
+.vscode/
+uploads/
+/logs/
+*.log
+*.pyc
+robots.txt

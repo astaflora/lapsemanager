@@ -1,0 +1,37 @@
+{% extends 'stock/base.html' %}
+
+
+{% block main %}
+    <form action="" method="POST" class="login-wrapper bg-info">
+        {% csrf_token %}
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <img src="" alt="">
+                <h2>NoLapseManager</h2>
+            </div>
+            <div class="row">
+                <div class="col-6 m-auto bg-light card card-info">
+                    <div class="card-body">
+                        {% for field in form %}
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-info"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+                        <div class="row">
+                            <button type="submit" class="btn btn-info m-auto" style="border-radius: 40px; padding-right: 1.25rem; padding-left: 1.25rem"> se connecter </button>
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+
+            </div>
+        </div>
+
+
+    </form>
+
+{% endblock %}
